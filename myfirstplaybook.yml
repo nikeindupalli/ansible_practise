@@ -23,3 +23,15 @@
           name: apache2
           state: present
     when: ansible_os_family =="Debian"
+  - name: Install htttpd server on redhat
+    yum
+          name: httpd
+          state: present
+    when: ansible_os_family =="Redhat"
+  - name: Start htttpd server on redhat
+    yum
+          name: httpd
+          state: started
+    when: ansible_os_family =="Redhat"
+
+  
