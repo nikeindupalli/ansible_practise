@@ -8,7 +8,7 @@
       state: present
   - name: Start webserver on redhat
     service:
-      name: {{mywebpackonredhat}}"
+      name: "{{mywebpackonredhat}}"
       state: started
   - name: Install apache2 on ubuntu
     apt:
