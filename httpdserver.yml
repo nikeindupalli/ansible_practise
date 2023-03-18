@@ -4,9 +4,17 @@
   tasks:
   - name: Install webserver on redhat
     yum:
-      name: httpd
+      name: {{mywebpackonredhat}}
       state: present
   - name: Start webserver on redhat
     service:
-      name: httpd
+      name: {{mywebpackonredhat}}
+      state: started
+  - name: Install apache2 on ubuntu
+    apt:
+      name: {{mywebpackonubuntu}}
+      state: present
+  - name: Start webserver on ubuntu
+    service:
+      name: {{mywebpackonubuntu}}
       state: started
