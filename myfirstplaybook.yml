@@ -1,5 +1,5 @@
 ---
-- hosts: apacheservers
+- hosts: all
   become: yes
   tasks:
   - name: Install tree software
