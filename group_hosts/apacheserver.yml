@@ -1,0 +1,5 @@
+--- 
+mywebpackonubuntu: apache2
+mywebpackonubuntu: httpd
+mywebpackonubuntu: openjdk-8-jre
+mywebpackonubuntu: java-1.8.0-openjdk

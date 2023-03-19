@@ -1,16 +1,16 @@
 --- 
-- hosts: all
+- hosts: apacheservers
   become: yes
   tasks:
   - name: install java on ubuntu
     apt:
-     name: "{{mywebpackonubuntu}}"
+     name: "{{myjavapackonubuntu}}"
      state: present
     when: ansible_os_family=="Debain"
 
   - name: Install java on redhat
     yum:
-     name: "{{mywebpackonredhat}}"
+     name: "{{myjavapackonredhat}}"
      state: present 
     when: ansible_os_family=="Redhat"
  
