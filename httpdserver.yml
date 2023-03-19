@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: apacheservers
   become: yes
   tasks:
   - name: Install webserver on redhat
