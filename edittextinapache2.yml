@@ -7,8 +7,8 @@
        src: myindex.j2
        dest: /var/www/html/index.html
     notify: restartapacheserver
-    handlers:
-   - name: restartapacheserver
-     service:
-       name: apache2
+  handlers:
+  - name: restartapacheserver
+    service:
+      name: apache2
       state: restarted
