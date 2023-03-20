@@ -1,5 +1,5 @@
 --- 
 - name: create a file
-    file: 
+  file: 
       path: /home/remah/mytestfile
       state: touch
