@@ -6,4 +6,5 @@
     copy:
       src: copyfile.txt
       dest: /home/remah/mycopyfile
+  - include_tasks: myfile.yml
   
