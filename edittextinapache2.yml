@@ -8,7 +8,7 @@
        dest: /var/www/html/index.html
     notify: restartapacheserver
   handlers:
-  - name: restartapacheserver
+  - name: restarting the apache server
     service:
       name: apache2
       state: restarted
