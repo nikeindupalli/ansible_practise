@@ -1,0 +1,8 @@
+--- 
+- hosts: 172.31.12.40
+  become: yes
+  tasks:
+  - name: create a directory
+    file:
+      path: /home/remah/myfolder
+      state: directory
