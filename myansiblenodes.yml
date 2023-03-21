@@ -14,4 +14,8 @@
      assign_public_ip: yes
      region: us-east-2
      instance_tags:
+<<<<<<< HEAD
         Name: AnsibleNodes
+=======
+        Name: AnsibleNodes
+>>>>>>> c7bb9855c8cbf331e9c62f0c05d7f0f5e7f183a6
